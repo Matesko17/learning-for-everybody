@@ -1,0 +1,12 @@
+------------------------------------------------------------------------------------------------------
+-- 
+--                                  ALWAYS MARK WHAT IS ALREADY DEPLOYED!
+--
+--    DO NOT EVER CHANGE ANYTHING ABOVE THE DEPLOYMENT LINE! INSERT RESPECTIVE SQL COMMANDS INSTEAD!
+--
+--   COPY FOLLOWING LINE TO THE BOTTOM OF THE FILE WHEN ALL CHANGES ARE DEPLOYED AND UPDATE THE DATE!
+-- *** DEPLOYMENT MARK *** Date: YYYY/MM/DD
+-- 
+-- 
+-- 
+------------------------------------------------------------------------------------------------------

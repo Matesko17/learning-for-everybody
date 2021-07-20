@@ -1,0 +1,27 @@
+
+PHP Curl Class is an object-oriented wrapper of the PHP cURL extension. http://www.phpcurlclass.com/
+https://github.com/php-curl-class/php-curl-class
+
+Simple static router for Nette Framework
+https://github.com/nextras/static-router
+"nextras/static-router": ">= 1.0",
+
+Grido - DataGrid for Nette Framework. http://o5.github.io/grido-examples/
+https://github.com/o5/grido
+https://packagist.org/packages/o5/grido
+
+A pure PHP library for reading and writing spreadsheet files
+https://github.com/PHPOffice/PHPExcel
+
+The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. http://getbootstrap.com
+https://github.com/twbs/bootstrap
+
+Simple Nette component creating breadcrumbs navigation with Bootstrap 3
+https://github.com/DavidZadrazil/nette-breadcrumb-bootstrap
+
+JavaScript WYSIWYG web text editor (standard-all)
+https://packagist.org/packages/ckeditor/ckeditor
+
+
+"geniv/goodflow": "dev-master",
+"geniv/latte-button-macros": "dev-master",

@@ -1,0 +1,41 @@
+translator:
+    create:
+        title: "Vytvořit překlady"
+        success: "Překladové entity byly vytvořeny"
+        fail: "Překladové entity nebyly vytvořeny"
+    generate:
+        title: "Generovat překlady"
+        success: "Překladové soubory byly vygenerovány"
+        fail: "Překladové soubory nebyly vygenerovány"
+    regenerate:
+        title: "Přegenerovat překlady"
+        success: "Překlady byly přegenerovány"
+        fail: "Překlady nebyly přegenerovány"
+    import:
+        title: "Importovat překlady"
+        success: "Překlady byly importovány"
+        fail: "Překlady nebyly importovány"
+    export:
+        title: "Exportovat překlady"
+        success: "Překlady byly exportovány"
+        fail: "Překlady nebyly exportovány"
+        
+
+loginFormControl:
+    createComponentForm:
+        send: 'Přihlásit'
+    loginForm:
+        login:
+            name: 'E-mail'
+            placeholder: 'Toto pole je povinné.'
+            required: 'Musíte zadat váš přihlašovací email.'
+        password:
+            name: 'Heslo'
+            placeholder: 'Vaše heslo'
+            required: 'Musíte zadat vaše heslo.'
+        rememberme:
+            name: 'Zapamatovat si mě'
+    signout:
+        send: 'Odhlásit se'
+        message:
+            success: 'Odhlášení bylo úspěšné.'

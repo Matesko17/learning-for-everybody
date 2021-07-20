@@ -1,0 +1,12 @@
+cssControl:
+    notExists: 'not exists'
+    missingFilesConfig: 'missing files config'
+    filesIsNotArray: 'files is not array'
+jsControl:
+    notExists: 'not exists'
+    missingFilesConfig: 'missing files config'
+    filesIsNotArray: 'files is not array'
+textControl:
+    noArgument: 'Nebyl zadany parametr identu.'
+    invalidArgument: 'Zadany parametr identu nenalezen.'
+    columnNotFound: 'Nebyl nalezeny platny nazev sloupce. Sloupec %column% neexistuje.'

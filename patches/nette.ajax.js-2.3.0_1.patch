@@ -1,0 +1,14 @@
+diff --git a/node_modules/nette.ajax.js/package.json b/node_modules/nette.ajax.js/package.json
+index 4ae6371..3a6177f 100644
+--- a/node_modules/nette.ajax.js/package.json
++++ b/node_modules/nette.ajax.js/package.json
+@@ -32,6 +32,9 @@
+   "deprecated": false,
+   "description": "Flexible utility script for AJAX in Nette Framework. Supports snippets, redirects etc. http://addons.nette.org/cs/nette-ajax-js",
+   "homepage": "https://github.com/vojtech-dobes/nette.ajax.js#readme",
++  "dependencies": {
++    "jquery": ">=1.7.0"
++  },
+   "keywords": [
+     "nette",
+     "ajax",

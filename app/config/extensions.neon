@@ -1,0 +1,28 @@
+doctrine:
+    host: localhost
+    user: qw10
+    password: qw10
+    dbname: qw10
+
+dibi:
+    driver: mysqli
+    charset: utf8
+    host: localhost
+    database: qw10
+    user: qw10
+    password: qw10
+
+mail:
+    smtp: true
+    host: smtp.redcat.cz
+    username: smtp@q2interactive.cz
+    password: q2smtp
+    #secure: ssl
+
+console:
+    url: http://local.projects.cz/QetteWeb
+
+translation:
+    default: xx
+    fallback: [cs_CZ, xx]
+    whitelist: [cs, en, xx]

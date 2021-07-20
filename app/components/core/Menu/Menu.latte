@@ -1,0 +1,56 @@
+{block #menu}
+<ul class="{$class}">
+
+{foreach $menu as $item}
+    {if $item->getRouteAlias() && $item->getRouteAlias()->getRoute()}
+        {if $item->getRouteAlias()->getItem()}
+            <li class="nav-item {$presenter->isLinkCurrent($item->getRouteAlias()->getRoute()->toString(), $item->getRouteAlias()->getItem()) ? active} {$item->isDropdown() ? dropdown}">
+                <a
+                    {if $item->isDropdown()}class="nav-link dropdown-item dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"" {else} class="nav-link" {/if}
+                    href="{plink $item->getRouteAlias()->getRoute()->toString().$item->getAnchor() $item->getRouteAlias()->getItem()}"
+                    {if $item->getBlank()} target="_blank"{/if}
+                    >
+                    {$item->getTitle()}
+                    {if $item->isDropdown()}<span class="caret"></span>{/if}
+                </a>
+                {if $item->getChildren() && $item->isDropdown()}
+                    {include #menu, 'menu' => $item->getChildren(), 'class' => "dropdown-menu"}
+                {/if}
+            </li>
+        {else}
+            <li class="nav-item {$presenter->isLinkCurrent($item->getRouteAlias()->getRoute()->toString()) ? active} {$item->isDropdown() ? dropdown}">
+                <a
+                    {if $item->isDropdown()}class="nav-link dropdown-item dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"" {else} class="nav-link" {/if}
+                    href="{plink $item->getRouteAlias()->getRoute()->toString().$item->getAnchor()}"
+                    {if $item->getBlank()} target="_blank"{/if}
+                    >
+                    {$item->getTitle()}
+                    {if $item->isDropdown()}<span class="caret"></span>{/if}
+                </a>
+                {if $item->getChildren() && $item->isDropdown()}
+                    {include #menu, 'menu' => $item->getChildren(), 'class' => "dropdown-menu"}
+                {/if}
+            </li>
+        {/if}
+    {else}
+        <li class="nav-item {$item->isDropdown() ? dropdown}">
+            <a
+                {if $item->isDropdown()}class="nav-link dropdown-item dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false""{else} class="nav-link" {/if}
+                href="{$item->getLink() ? $item->getLink() : '#'}{$item->getAnchor()}"
+                {if $item->getBlank()} target="_blank"{/if}
+                >
+                {$item->getTitle()}
+                {if $item->isDropdown()}<span class="caret"></span>{/if}</a>
+            {if $item->getChildren() && $item->isDropdown()}
+                {include #menu, 'menu' => $item->getChildren(), 'class' => "dropdown-menu"}
+            {/if}
+        </li>
+    {/if}
+{/foreach}
+
+{* {foreach $menu->getMenuItems() as $item}
+    {dump $item}
+{/foreach} *}
+
+</ul>
+{/block}

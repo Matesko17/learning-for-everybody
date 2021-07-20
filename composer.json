@@ -1,0 +1,46 @@
+{
+    "name": "q2/qetteweb",
+    "description": "default project for q2 web applications",
+    "type": "project",
+    "config": {
+        "secure-http": false,
+        "sort-packages": true
+    },
+    "scripts": {
+        "pre-update-cmd": [
+            "php composer.phar self-update"
+        ],
+        "post-create-project-cmd": [
+            "npm install --loglevel=timing"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis.q2cz.local"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-json": "*",
+        "dibi/dibi": "^4.0",
+        "geniv/nette-visualpaginator": "^1.0",
+        "jzechy/nette-antispam": "^2.0",
+        "kdyby/doctrine": "^3.2",
+        "kdyby/translation": "^2.4",
+        "latte/latte": "2.4.*",
+        "nette/nette": "^2.4",
+        "phpoffice/phpspreadsheet": "^1.6",
+        "q2/doctrine-behaviors": "1.0",
+        "symfony/config": "4.1.8",
+        "symfony/console": "4.1.8",
+        "symfony/filesystem": "4.1.8",
+        "symfony/translation": "4.1.8",
+        "tracy/tracy": "^2.6"
+    },
+    "require-dev": {
+        "nette/tester": "^2.2"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}

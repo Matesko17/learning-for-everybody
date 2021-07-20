@@ -1,0 +1,15 @@
+services:
+
+# controls
+    admin.loginForm: App\AdminModule\Components\LoginForm
+
+# control factories
+    admin.loginFormControlFactory: App\AdminModule\Components\ILoginFormControlFactory
+
+# facades / models
+    admin.identityFacade: App\AdminModule\Model\Facades\IdentityFacade()
+
+# services
+    admin.authenticator:
+        class: App\AdminModule\Services\Authenticator
+        autowired: self

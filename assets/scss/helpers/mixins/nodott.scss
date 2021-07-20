@@ -1,0 +1,5 @@
+@mixin nodott {
+    &, &:focus, &:active {
+        outline: 0 !important;
+    }
+}

@@ -1,0 +1,5 @@
+﻿id;namece;section;key;default;translate;lang;updated
+301;payload;header;hello;Hello world!!!;Hello world!!!;cs;1
+302;payload;header;hello;Hello world!!!;Hello world!!!;en;1
+303;q2UserExt;changePasswordFormControl;createComponentForm.send;Změnit heslo;Změnit heslo;cs;1
+304;q2UserExt;changePasswordFormControl;createComponentForm.send;Změnit heslo;Změnit heslo;en;1

@@ -1,0 +1,24 @@
+parameters:
+    # Plural forms: http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html
+    # Need to add $ and additionaly shrink into brackets! Otherwise EVAL has troubles with evaluating the right plural.
+    # je vhodne prehazeni poradi cisel aby sedely pocatecni tvary pluralu (0 windows, 1 window, 2 windows | 0 oken, 1 okno, 2 okna)
+    # It is advisable to reorder numbers so as the inititol forms of pluralas matches (0 windows, 1 window, 2 windows | 0 oken, 1 okno, 2 okna)
+    plurals:
+        cs: "$nplurals=3; $plural=($n==1) ? 1 : (($n>=2 && $n<=4) ? 2 : 0);"
+        en: "$nplurals=2; $plural=($n != 1) ? 0 : 1;"
+        de: "$nplurals=2; $plural=($n != 1) ? 0 : 1;"
+
+    jsControl: # files without extension - dev = .js / prod = .min.js
+        front:
+            files:
+                - 'js/scripts'
+
+    cssControl: # files without extension - dev = .css / prod = .min.css
+        front:
+            files:
+                - 'css/styles'
+
+    tb_route: "%tb_prefix%route"
+    
+    files:
+        path: "%wwwDir%/files/"

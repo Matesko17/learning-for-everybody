@@ -1,0 +1,43 @@
+parameters:
+
+    # https setting true | false
+    https: false
+
+    # router settings
+    router:
+        database: true  # enable database router
+        seo: false      # enable router seo extension
+
+        # enable domain language translation
+        languageDomainSwitch: false
+        languageDomainAlias:
+            cz: cs
+            com: en
+
+    # prefix
+    tb_prefix: "qw_"
+
+    siteSettings:
+        mainLang: "cs"
+
+        allowLang:
+            "cs": "Čeština"
+            "en": "English"
+
+        aliasLang:
+            de: "en"
+            sk: "cs"
+            fr: "en"
+
+        homeTitle: Qetteweb
+        homeDesc: Qetteweb default nastavení
+
+        separator: " | "
+
+        ga: ""
+        gtm: ""
+
+        titleSuffix: Qetteweb
+
+        headAuthor: "Q2"
+        headRobots: "all,follow"

@@ -1,0 +1,7 @@
+{block title}{_"admin.translator.import.title"}{/block}
+
+{block content}
+<div n:if="$flashes" n:foreach="$flashes as $flash" class="alert alert-{$flash->type}" role="alert">
+    {$flash->message}
+</div>
+{/block}

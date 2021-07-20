@@ -1,0 +1,21 @@
+{block title}{$page->title}{/block}
+{*{block description}Popis stranky{/block}*}
+{*{block keywords}klicove slova{/block}*}
+{block slug}{$page->title}{/block}
+
+{block content}
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <h2>{$page->title}</h2>
+                {$page->text|noescape}
+
+            </div>
+        </div>
+    </div>
+</main>
+
+{/block}

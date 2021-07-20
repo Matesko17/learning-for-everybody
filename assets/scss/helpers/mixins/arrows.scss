@@ -1,0 +1,92 @@
+@mixin arrow($width1: 10px, $width2: 0, $width3: 10px, $width4: 20px, $color1: transparent, $color2: transparent, $color3: transparent, $color4: $black) {
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    border-width: $width1 $width2 $width3 $width4;
+    border-color: $color1 $color2 $color3 $color4;
+    // border-style: inset; // if Firefox renders a strange gray border
+    // -webkit-transform: rotate(360deg); // for a better anti-aliasing in webkit browser
+}
+
+// Equilateral / Rovnostranný trojúhelník
+@mixin equ-top-arrow($size: 20px, $color: $black) {
+    @include arrow(0, $size / 2, round(sqrt(3) / 2 * $size), $size / 2, transparent, transparent, $color, transparent);
+}
+
+@mixin equ-right-arrow($size: 20px, $color: $black) {
+    @include arrow($size / 2, 0, $size / 2, round(sqrt(3) / 2 * $size), transparent, transparent, transparent, $color);
+}
+
+@mixin equ-bottom-arrow($size: 20px, $color: $black) {
+    @include arrow(round(sqrt(3) / 2 * $size), $size / 2, 0, $size / 2, $color, transparent, transparent, transparent);
+}
+
+@mixin equ-left-arrow($size: 20px, $color: $black) {
+    @include arrow($size / 2, round(sqrt(3) / 2 * $size), $size / 2, 0, transparent, $color, transparent, transparent);
+}
+
+// Isosceles / Rovnoramenný trojúhelník
+@mixin iso-top-arrow($width: 30px, $height: 20px, $color: $black) {
+    @include arrow(0, $width / 2, $height, $width / 2, transparent, transparent, $color, transparent);
+}
+
+@mixin iso-top-right-arrow($size: 30px, $color: $black) {
+    @include arrow(0, $size, $size, 0, transparent, $color, transparent, transparent);
+}
+
+@mixin iso-right-arrow($width: 20px, $height: 30px, $color: $black) {
+    @include arrow($height / 2, 0, $height / 2, $width, transparent, transparent, transparent, $color);
+}
+
+@mixin iso-bottom-right-arrow($size: 30px, $color: $black) {
+    @include arrow(0, 0, $size, $size, transparent, transparent, $color, transparent);
+}
+
+@mixin iso-bottom-arrow($width: 30px, $height: 20px, $color: $black) {
+    @include arrow($height, $width / 2, 0, $width / 2, $color, transparent, transparent, transparent);
+}
+
+@mixin iso-bottom-left-arrow($size: 30px, $color: $black) {
+    @include arrow($size, 0, 0, $size, transparent, transparent, transparent, $color);
+}
+
+@mixin iso-left-arrow($width: 20px, $height: 30px, $color: $black) {
+    @include arrow($height / 2, $width, $height / 2, 0, transparent, $color, transparent, transparent);
+}
+
+@mixin iso-top-left-arrow($size: 30px, $color: $black) {
+    @include arrow($size, $size, 0, 0, $color, transparent, transparent, transparent);
+}
+
+// Scalene / Obecný trojúhelník
+@mixin sca-top-arrow($height: 20px, $left: 15px, $right: 15px, $color: $black) {
+    @include arrow(0, $right, $height, $left, transparent, transparent, $color, transparent);
+}
+
+@mixin sca-top-right-arrow($width: 30px, $height: 30px, $color: $black) {
+    @include arrow(0, $width, $height, 0, transparent, $color, transparent, transparent);
+}
+
+@mixin sca-right-arrow($width: 20px, $top: 15px, $bottom: 15px, $color: $black) {
+    @include arrow($top, 0, $bottom, $width, transparent, transparent, transparent, $color);
+}
+
+@mixin sca-bottom-right-arrow($width: 30px, $height: 30px, $color: $black) {
+    @include arrow(0, 0, $height, $width, transparent, transparent, $color, transparent);
+}
+
+@mixin sca-bottom-arrow($height: 20px, $left: 15px, $right: 15px, $color: $black) {
+    @include arrow($height, $right, 0, $left, $color, transparent, transparent, transparent);
+}
+
+@mixin sca-bottom-left-arrow($width: 30px, $height: 30px, $color: $black) {
+    @include arrow($height, 0, 0, $width, transparent, transparent, transparent, $color);
+}
+
+@mixin sca-left-arrow($width: 20px, $top: 15px, $bottom: 15px, $color: $black) {
+    @include arrow($top, $width, $bottom, 0, transparent, $color, transparent, transparent);
+}
+
+@mixin sca-top-left-arrow($width: 30px, $height: 30px, $color: $black) {
+    @include arrow($height, $width, 0, 0, $color, transparent, transparent, transparent);
+}

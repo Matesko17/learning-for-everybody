@@ -1,0 +1,13 @@
+header:
+    hello: "Hello world!!!"
+
+homepage:
+    title: "Hello homepage"
+    subtitle: "Example data"
+    template: "Template data"
+    demo: "Demo data"
+    contactForm:
+        header:
+            title: "form na homepage"
+        body:
+            title: "rozum na obloze"
