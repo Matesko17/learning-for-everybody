@@ -1,9 +1,0 @@
-<ul class="navbar-nav mr-auto">
-{foreach $languages as $code => $name}
-    {if $code == $languageCode}
-        <li class="nav-item active"><a href="#" class="nav-link">{$name}</a></li>
-    {else}
-        <li class="nav-item"><a href="{if $domain}//{$domain.$flipLanguageDomainAlias[$code]}{plink this, (expand) $presenter->request->getParameters(), locale=>$code}{else}{plink //this, (expand) $presenter->request->getParameters(), locale=>$code}{/if}" class="nav-link">{$name}</a></li>
-    {/if}
-{/foreach}
-</ul>

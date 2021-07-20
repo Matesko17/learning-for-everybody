@@ -1,7 +1,0 @@
-session:
-    autoStart: true  # vychozi je smart
-    expiration: 14 days
-    name: qetteweb
-    # savePath: "%tempDir%/sessions"
-    # cookiePath: '/'
-    # cookieDomain: '.example.com'

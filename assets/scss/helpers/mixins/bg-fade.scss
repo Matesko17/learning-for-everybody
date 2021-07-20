@@ -1,4 +1,0 @@
-@mixin bg-fade($color: $black, $fade: 0.7) {
-    background-color: $color;
-    background-color: rgba($color, $fade);
-}

@@ -1,4 +1,0 @@
-services:
-    translationCommand:
-        class: App\AdminModule\Console\TranslationCommand
-        tags: [kdyby.console.command]

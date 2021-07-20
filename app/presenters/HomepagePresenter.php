@@ -1,16 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Presenters;
 
-/**
- * Class HomepagePresenter
- *
- * @author  Radek Fryšták <radek.frystak@q2.cz>
- * @package Qetteweb
- */
-class HomepagePresenter extends BasePresenter
+use Nette;
+
+
+final class HomepagePresenter extends Nette\Application\UI\Presenter
 {
-    public function renderDefault()
-    {
-    }
 }
